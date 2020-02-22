@@ -12,7 +12,7 @@
 <meta property="og:title" content="葬爱玩心师">
 <meta property="og:url" content="http://yoursite.com/index.html">
 <meta property="og:site_name" content="葬爱玩心师">
-<meta property="og:locale" content="en_US">
+<meta property="og:locale" content="zh">
 <meta property="article:author" content="Heart Broker">
 <meta name="twitter:card" content="summary">
   
@@ -43,7 +43,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="" class="js-avatar">
+			<img src="/assets/img/avatar.jpg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">Heart Broker</a></h1>
@@ -57,7 +57,9 @@
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/photos/">相册</a></li>
+				<li><a href="/tags/notes/">笔记</a></li>
+	        
+				<li><a href="/tags/mindmap/">思维导图</a></li>
 	        
 			</ul>
 		</nav>
@@ -68,10 +70,6 @@
     			
             
     			
-    			<a q-on="click: openSlider(e, 'friends')" href="javascript:void(0)">友链</a>
-    			
-            
-    			
     			<a q-on="click: openSlider(e, 'aboutme')" href="javascript:void(0)">关于我</a>
     			
             
@@ -79,14 +77,6 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
-		        
-					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
-		        
-					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-		        
-					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
-		        
 			</div>
 		</nav>
 	</header>		
@@ -103,7 +93,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="" class="js-avatar">
+				<img src="/assets/img/avatar.jpg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">Heart Broker</h1>
@@ -117,29 +107,25 @@
 			
 				
 			
+				
+			
 			
 			
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
-			        
-						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
-			        
-						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
-			        
-						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
-			        
 				</div>
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 50%">
+				<ul style="width: 70%">
 				
 				
-					<li style="width: 50%"><a href="/">主页</a></li>
+					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/photos/">相册</a></li>
+					<li style="width: 33.333333333333336%"><a href="/tags/notes/">笔记</a></li>
+		        
+					<li style="width: 33.333333333333336%"><a href="/tags/mindmap/">思维导图</a></li>
 		        
 				</ul>
 			</nav>
@@ -203,7 +189,7 @@
 <p>2.3 下载ins.css文件ins.js文件<a href="https://github.com/cungudafa/img/tree/master/js_css" target="_blank" rel="noopener">2</a><br>2.4 js文件修改，大约在119行左右的链接修改为你的GitHub的仓库地址，共两处</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1 var minSrc &#x3D; &#39;https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;你的github名&#x2F;GitHub仓库名&#x2F;master&#x2F;min_photos&#x2F;&#39; + data.link[i];</span><br><span class="line">2 var src &#x3D; &#39;https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;你的github名&#x2F;GitHub仓库名&#x2F;master&#x2F;photos&#x2F;&#39; + data.link[i];</span><br></pre></td></tr></table></figure>
 
-<h4 id="3-加速策略"><a href="#3-加速策略" class="headerlink" title="3. 加速策略"></a>3. 加速策略</h4><h5 id="3-1-把图片放在github上"><a href="#3-1-把图片放在github上" class="headerlink" title="3.1 把图片放在github上"></a>3.1 把图片放在github上</h5><p>3.1.1. 图片要存在GitHub就要有个仓库；新建仓库，命名img<br><img src="https://raw.githubusercontent.com/youqingqian/img/master/photos/2020-02-21_repo.png" alt="Blog_Album"><br>3.1.2. 本地在博客根目录同级目录新建文件夹，命名Blog_Album<br><img src="https://raw.githubusercontent.com/youqingqian/img/master/photos/2020-02-21_python.png" alt="Blog_Album"><br>3.1.3. git 克隆到 Blog_Album<br><code>git clone &lt;url&gt;</code><br>3.1.4. Blog_Album内新建文件夹photos，存放博客的图片。<br>3.1.5. 为图片加日期，下载ImageRename脚本<a href="https://github.com/cungudafa/img" target="_blank" rel="noopener">1</a>，这个脚本可以批量给图片加日期，由于工具限制，图片命名需要注意不要有_和.<br><img src="https://raw.githubusercontent.com/youqingqian/img/master/photos/2020-02-21_album.png" alt="Blog_Album"></p>
+<h4 id="3-加速策略"><a href="#3-加速策略" class="headerlink" title="3. 加速策略"></a>3. 加速策略</h4><h5 id="3-1-把图片放在github上"><a href="#3-1-把图片放在github上" class="headerlink" title="3.1 把图片放在github上"></a>3.1 把图片放在github上</h5><p>3.1.1. 图片要存在GitHub就要有个仓库；新建仓库，命名img<br>3.1.2. 本地在博客根目录同级目录新建文件夹，命名Blog_Album<br><img src="https://raw.githubusercontent.com/youqingqian/img/master/photos/2020-02-21_python.png" alt="Blog_Album"><br>3.1.3. git 克隆到 Blog_Album<br><code>git clone &lt;url&gt;</code><br>3.1.4. Blog_Album内新建文件夹photos，存放博客的图片。<br>3.1.5. 为图片加日期，下载ImageRename脚本<a href="https://github.com/cungudafa/img" target="_blank" rel="noopener">1</a>，这个脚本可以批量给图片加日期，由于工具限制，图片命名需要注意不要有_和.</p>
 <h5 id="3-2-先加载缩略图再加载原图"><a href="#3-2-先加载缩略图再加载原图" class="headerlink" title="3.2 先加载缩略图再加载原图"></a>3.2 先加载缩略图再加载原图</h5><p>3.2.1. 下载脚本ImageProcess.py和tool.py<a href="https://github.com/cungudafa/img" target="_blank" rel="noopener">1</a>至此文件夹内（Blog_Album）<br>3.2.2. tool脚本有个四功能：裁剪成方形，压缩大小，上传git，生成图片数据json<br>3.2.3. 运行tool脚本需要pillow库，pip安装的时候如果失败就用国内镜像就好了<br>3.2.4. git相关操作在另一篇文章<br>3.2.5. 运行tool生成的data.jason复制到博客/source/photos下</p>
 <h3 id="四、注意事项"><a href="#四、注意事项" class="headerlink" title="四、注意事项"></a>四、注意事项</h3><ul>
 <li>3.2.2的tool脚本</li>
@@ -534,7 +520,6 @@
 </blockquote>
 <p>​        <strong>Suddenly, it stopped and failed and I had to continued to search for other solutions.</strong></p>
 <p>​        <strong>Guess what, this problem was easily solved by just changing my dns to 8.8.8.8.</strong></p>
-<p><img src="https://raw.githubusercontent.com/youqingqian/img/master/photos/2020-02-20_success.png" alt="success"><br><img src="https://raw.githubusercontent.com/youqingqian/img/master/photos/2020-02-20_zsh.png" alt="zsh"></p>
 <p>​        <strong>Going through these, it stroke me that there are many ways to solve a problem but sometimes the problem itself is so easily-solved if you had grasbed the basic curriculums of Computer Science.</strong></p>
 <p>​        As the saying goes, <em>A beard well lathered is half shaved.</em> I finally got the significance of learning <em>Computer Network</em> .</p>
 <p>​        </p>
@@ -645,25 +630,17 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
       
       
     
-      
-      
-      
-    
     
 
     <ul style="width: 70%">
     
     
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'innerArchive')"><a href="javascript:void(0)" q-class="active:innerArchive">所有文章</a></li>
       
         
       
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'friends')"><a href="javascript:void(0)" q-class="active:friends">友链</a></li>
-      
-        
-      
-      <li style="width: 33.333333333333336%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
+      <li style="width: 50%" q-on="click: openSlider(e, 'aboutme')"><a href="javascript:void(0)" q-class="active:aboutme">关于我</a></li>
       
         
     </ul>
@@ -739,43 +716,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
 
     
-    	<section class="tools-section tools-section-friends" q-show="friends">
-  		
-        <ul class="search-ul">
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接2</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接3</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接4</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接5</a>
-            </li>
-          
-            <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接6</a>
-            </li>
-          
-        </ul>
-  		
-    	</section>
-    
 
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">孤独和迷惘的人类&lt;br&gt;千百年来&lt;br&gt;都是在不确定中寻找确定&lt;br&gt;包括你和我</div>
   	  	
     	</section>
     
